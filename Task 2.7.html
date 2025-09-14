@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2.7</title>
+    <style>
+        body {
+            color: rgb(255, 255, 255);
+        }
+
+        .box {
+            height: 100px;
+            width: 150px;
+        }
+        
+        .blueviolet-box {
+            background-color: blueviolet;
+            position: static;
+        }
+        
+        .darkred-box {
+            background-color: darkred;
+            position: relative;
+        }
+
+        .peru-box {
+            background-color: peru;
+            position: relative;
+            bottom: 20px;
+            left: 30px;
+        }
+
+        .indianred-box {
+            background-color: indianred;
+            position: relative;
+            width: 633px;
+            height: 360px;
+        }
+
+        .forestgreen-box {
+            background-color: forestgreen;
+            position: fixed;
+            height: 100px;
+            width: 100px;
+            right: 0;
+            bottom: 0;
+        }
+
+        .indigo-box {
+            background-color: indigo;
+            position: absolute;
+            right: 0;
+            top: 100px;
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="blueviolet-box box">It's a static div!</div>
+        <div class="darkred-box box">It's a relative div!</div>
+        <div class="peru-box box">It's a relative div!</div>
+        <div class="forestgreen-box">It's a fixed div!</div>
+        <div class="indianred-box">It's a relative div!
+            <div class="indigo-box">It's an absolute div with relative parent!</div>
+        </div>
+    </main>    
+</body>
+</html>
